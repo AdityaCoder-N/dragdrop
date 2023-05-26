@@ -1,0 +1,55 @@
+.homepage{
+    height: 100vh;
+    width: 100vw;
+    background-color: #8F00FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-container{
+    color: white;
+    text-align: center;
+}
+
+.heading{
+    font-size: xx-large;
+    font-weight: 550;
+    
+}
+.subtxt{
+    font-weight: 500;
+    
+}
+
+.home-play-btn{
+
+    height: 80px;
+    width: 80px;
+
+    border-radius: 100px;
+    border: 3px solid white;
+    font-size: 40px;
+
+    margin: 0 auto;
+    margin-top: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+.home-play-btn:hover{
+    background-color: white;
+    color: #8F00FF;
+}
+
+.home-play-btn i{
+    position: relative;
+    left: 5%;
+    
+}
