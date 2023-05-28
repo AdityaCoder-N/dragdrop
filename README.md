@@ -24,31 +24,31 @@ File - Playscreen.jsx <br/>
       4. OnDrop - Evoked when an element is dropped over the hovered element . <br/> 
             Contains logic for actual functioning : - <br/>
             Algo : - <br/>
-              If (dropped element present in Option array) // means it is dragged from options 
-                  Add it to the solution array at the particular index it is hovered on, Remove from Option Array. 
-                  If(it is getting dropped on to an place already containing a number)
-                    Push the previously contained number back to option array
-              else  // means it is dragged from solutions boxes itself
-                  Swap the contents of the two solution boxes
+              If (dropped element present in Option array) // means it is dragged from options <br/>
+                  Add it to the solution array at the particular index it is hovered on, Remove from Option Array. <br/>
+                  If(it is getting dropped on to an place already containing a number) <br/>
+                    Push the previously contained number back to option array <br/>
+              else  // means it is dragged from solutions boxes itself <br/>
+                  Swap the contents of the two solution boxes <br/>
                   
-     5. OnDragOver - evoked when an element is hovered on another element . Used to add css lcasses for hover effect.
+     5. OnDragOver - evoked when an element is hovered on another element . Used to add css lcasses for hover effect. <br/>
      
      
      
-Result Page - Directory(src/pages/ResultPage)
+Result Page - Directory(src/pages/ResultPage) <br/>
 
-  -has code for checking wether the array given by user is sorted or not
-      Algo : 
-        1. Store the array in another temporary array
-        2. Sort the temporary Array using built in sort function
-        3. If (sorted array is equal to the array provided by user)
-              Correct Answer
-           else
-              Wrong Answer
+  -has code for checking wether the array given by user is sorted or not <br/>
+      Algo :  <br/>
+        1. Store the array in another temporary array <br/>
+        2. Sort the temporary Array using built in sort function <br/>
+        3. If (sorted array is equal to the array provided by user) <br/>
+              Correct Answer <br/>
+           else <br/>
+              Wrong Answer <br/>
               
               
               
-CSS Files for each page and component is in their respective directory.
+CSS Files for each page and component is in their respective directory. <br/>
   
 
 
