@@ -1,3 +1,62 @@
+
+# About The Project
+
+This project is a basic drag and drop application project where user needs to sort th given numbers in ascending order. <br/>
+It contains two sections <br/>
+1. Options (Random Numbers) - provided to user . Directory -> src/components/DraggableOptions <br/>
+2. Solution (Empty Boxes) - which user needs to fill . Directory -> src/pages/Playscreen <br/>
+
+File - DraggableOptions.jsx <br/>
+
+- Has option container <br/>
+  Events on option-container - <br/> 
+    1. OnDragStart - Evoked when user begins to start dragging an element . Used to get value of draged element. <br/>
+    2. OnDragEnd - Evoked when user stops dragging. Used for removing css classes. <br/>
+
+File - Playscreen.jsx <br/>
+
+-Has the whole user interface for sorting and moving elements <br/>
+-Has Solution container boxes <br/>
+    Events on Solution-boxes - <br/>
+      1. OnDragStart - Evoked when user begins to start dragging an element . Used to get value of draged element. <br/>
+      2. OnDragEnd - Evoked when user stops dragging. Used for removing css classes. <br/>
+      3. OnDragLeave - Put on the element which has another element hovering over it. Evoked when the dragged item leaves the element it was dragging over. Used                         to remove css classes. <br/>
+      4. OnDrop - Evoked when an element is dropped over the hovered element . <br/> 
+            Contains logic for actual functioning : - <br/>
+            Algo : - <br/>
+              If (dropped element present in Option array) // means it is dragged from options 
+                  Add it to the solution array at the particular index it is hovered on, Remove from Option Array. 
+                  If(it is getting dropped on to an place already containing a number)
+                    Push the previously contained number back to option array
+              else  // means it is dragged from solutions boxes itself
+                  Swap the contents of the two solution boxes
+                  
+     5. OnDragOver - evoked when an element is hovered on another element . Used to add css lcasses for hover effect.
+     
+     
+     
+Result Page - Directory(src/pages/ResultPage)
+
+  -has code for checking wether the array given by user is sorted or not
+      Algo : 
+        1. Store the array in another temporary array
+        2. Sort the temporary Array using built in sort function
+        3. If (sorted array is equal to the array provided by user)
+              Correct Answer
+           else
+              Wrong Answer
+              
+              
+              
+CSS Files for each page and component is in their respective directory.
+  
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
