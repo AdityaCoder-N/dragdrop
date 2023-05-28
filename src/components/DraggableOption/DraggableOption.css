@@ -1,0 +1,16 @@
+.draggable-boxes{
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 10px;
+    border: 2px dotted black;
+    width: 50px;
+    text-align: center;
+    padding: 2%;
+    margin: 0.5%;
+    transition: all 0.2s ease-in-out;
+}
+
+.dragging{
+    opacity: 50%;
+}

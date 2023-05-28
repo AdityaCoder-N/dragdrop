@@ -10,7 +10,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import PlayScreen from "./pages/PlayScreen/PlayScreen";
-
+import ResultPage from "./pages/ResultPage/ResultPage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:'/play',
     element:<PlayScreen/>
+  },
+  {
+    path:'/result',
+    element:<ResultPage/>
   }
 ]);
 

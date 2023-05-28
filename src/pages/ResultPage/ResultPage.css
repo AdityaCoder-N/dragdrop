@@ -1,0 +1,48 @@
+.result-page{
+    background-color: #8f00ff;
+    min-height: 90vh;
+    padding: 2.5% 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container{
+    text-align: center;
+    color: white;
+
+}
+
+.reset-btn{
+    border: none;
+    padding: 2% 4%;
+    background-color: #FF006E;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 4%;
+}
+.reset-btn:hover{
+    background-color: #d7035f;
+}
+
+.heading{
+    font-size: xx-large;
+    font-weight: 550;
+    
+}
+.subtxt{
+    font-weight: 500;
+    
+}
+.green{
+    color: rgb(53, 255, 53);
+    
+}
+.red{
+    color:rgb(255, 53, 53);
+   
+}
