@@ -110,7 +110,7 @@ const PlayScreen = () => {
     <div className='playscreen'>
         
         <div className='playscreen-headings'>
-          <div>Exercise : <strong>Sort-Up</strong> </div>
+          <div>Level-1 : <strong>Sort-Up</strong> </div>
           <div><strong>Task - </strong>Arrange the numbers in Ascending Order.</div>
         </div>
 

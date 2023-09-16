@@ -112,7 +112,7 @@ const Level2 = () => {
     <div className='playscreen'>
         
         <div className='playscreen-headings'>
-          <div>Exercise : <strong>Sort-Down</strong> </div>
+          <div>Level-2 : <strong>Sort-Down</strong> </div>
           <div><strong>Task - </strong>Arrange the numbers in Descending Order.</div>
         </div>
 
