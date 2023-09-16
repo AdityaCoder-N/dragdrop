@@ -1,3 +1,62 @@
+
+
+# About The Project
+
+This project is a basic drag and drop application project where the user needs to sort the given numbers in ascending order.
+
+It contains two sections:
+
+1. Options (Random Numbers) - provided to the user. Directory: `src/components/DraggableOptions`.
+2. Solution (Empty Boxes) - which the user needs to fill. Directory: `src/pages/Playscreen`.
+
+## DraggableOptions.jsx
+
+File - DraggableOptions.jsx
+
+- Has option container.
+- Events on option-container:
+   - `OnDragStart`: Evoked when the user begins to start dragging an element. Used to get the value of the dragged element.
+   - `OnDragEnd`: Evoked when the user stops dragging. Used for removing CSS classes.
+
+## Playscreen.jsx
+
+File - Playscreen.jsx
+
+- Has the whole user interface for sorting and moving elements.
+- Has Solution container boxes.
+- Events on Solution-boxes:
+   - `OnDragStart`: Evoked when the user begins to start dragging an element. Used to get the value of the dragged element.
+   - `OnDragEnd`: Evoked when the user stops dragging. Used for removing CSS classes.
+   - `OnDragLeave`: Put on the element which has another element hovering over it. Evoked when the dragged item leaves the element it was dragging over. Used to remove CSS classes.
+   - `OnDrop`: Evoked when an element is dropped over the hovered element. Contains logic for actual functioning:
+      - If the dropped element is present in the Option array (means it is dragged from options):
+         - Add it to the solution array at the particular index it is hovered on, Remove from Option Array.
+         - If it is getting dropped onto a place already containing a number:
+            - Push the previously contained number back to the option array.
+      - Else (means it is dragged from solutions boxes itself):
+         - Swap the contents of the two solution boxes.
+   - `OnDragOver`: Evoked when an element is hovered on another element. Used to add CSS classes for hover effect.
+
+## Result Page
+
+Result Page - Directory: `src/pages/ResultPage`
+
+- Has code for checking whether the array given by the user is sorted or not.
+   - Algorithm:
+     1. Store the array in another temporary array.
+     2. Sort the temporary Array using the built-in sort function.
+     3. If the sorted array is equal to the array provided by the user:
+        - Correct Answer.
+     4. Else:
+        - Wrong Answer.
+
+CSS Files for each page and component are in their respective directories.
+
+Please refer to the individual files mentioned with their respective directories for more information about the project structure and functionality.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
