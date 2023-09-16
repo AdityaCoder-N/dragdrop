@@ -82,7 +82,7 @@ const PlayScreen = () => {
     else{
 
       // Not letting Drop dragged
-      if(tempSolution[draggedIndex]=='+ Drop'){
+      if(tempSolution[draggedIndex]==='+ Drop'){
         return;
       }
 

@@ -18,8 +18,8 @@ const ResultPage = () => {
         else
             temp.sort((a,b)=>b-a);
 
-        console.log("temp : ",temp );
-        console.log("solution : ",solution)
+        // console.log("temp : ",temp );
+        // console.log("solution : ",solution)
 
         let flag=0;
         for(let i=0;i<solution.length;i++){
