@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import './PlayScreen.css'
+
 import DraggableOption from '../../components/DraggableOption/DraggableOption';
+import './Level2.css'
 
-const PlayScreen = () => {
 
-  const [options,setOptions] = useState([]);
+const Level2 = () => {
+
+    const [options,setOptions] = useState([]);
   const [solution,setSolution] = useState(['+ Drop','+ Drop','+ Drop','+ Drop','+ Drop']);
   const [dragging,setDragging] = useState(false);
   const [draggedIndex,setDraggedIndex] = useState(null);
@@ -104,14 +106,14 @@ const PlayScreen = () => {
     generateOptions();
 
   }, [])
-  
+
 
   return (
     <div className='playscreen'>
         
         <div className='playscreen-headings'>
-          <div>Exercise : <strong>Sort-Up</strong> </div>
-          <div><strong>Task - </strong>Arrange the numbers in Ascending Order.</div>
+          <div>Exercise : <strong>Sort-Down</strong> </div>
+          <div><strong>Task - </strong>Arrange the numbers in Descending Order.</div>
         </div>
 
 
@@ -145,7 +147,7 @@ const PlayScreen = () => {
 
         <div className='btn-container'>
 
-        <Link to='/result' state={{ solution: solution,level:"1" }}><button disabled={disabledBtn} className={disabledBtn?'check-btn disabled-btn':'check-btn'} >Check Answer</button></Link>
+        <Link to='/result' state={{ solution: solution , level:"2" }}><button disabled={disabledBtn} className={disabledBtn?'check-btn disabled-btn':'check-btn'} >Check Answer</button></Link>
         </div>
 
 
@@ -153,4 +155,4 @@ const PlayScreen = () => {
   )
 }
 
-export default PlayScreen
+export default Level2

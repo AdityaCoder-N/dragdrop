@@ -14,7 +14,7 @@ const Homepage = () => {
             <div className='sub-txt'>
                 A place created specially to Learn while Playing.
             </div>
-            <div className='home-play-btn' onClick={()=>{ navigate('/play') }}>
+            <div className='home-play-btn' onClick={()=>{ navigate('/level1') }}>
                 <i class="fa-solid fa-play"></i>
             </div>
         </div>

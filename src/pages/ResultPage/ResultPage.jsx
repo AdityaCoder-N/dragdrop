@@ -6,14 +6,17 @@ const ResultPage = () => {
 
     const location = useLocation()
     const navigate = useNavigate();
-    const { solution} = location.state 
+    const { solution,level} = location.state 
 
     const [result,setResult] = useState(false)
 
     useEffect(() => {
       
         let temp = [...solution];
-        temp.sort((a, b) => a - b)
+        if(level==="1")
+            temp.sort((a, b) => a - b);
+        else
+            temp.sort((a,b)=>b-a);
 
         console.log("temp : ",temp );
         console.log("solution : ",solution)
@@ -46,14 +49,26 @@ const ResultPage = () => {
                 Note : In an ascending array , The next element is greater to the elements before it.
             </div>
             
-            <button className='reset-btn' onClick={()=>navigate('/play')}>Reset</button>
+            {
+                level==="1"?
+                <button className='reset-btn' onClick={()=>navigate('/level1')}>Reset</button>
+                :
+                <button className='reset-btn' onClick={()=>navigate('/level12')}>Reset</button>
+            }
         </div>:
 
         <div className='result-container'>
             <div className='heading'>
                 Congrats ! You gave the Correct Answer <i className="fa-solid fa-check green"></i>
             </div>
-            <button className='reset-btn' onClick={()=>navigate('/play')}>Play Again</button>
+
+            {
+                level==="1"?
+                <button className='reset-btn' onClick={()=>navigate('/level2')}>Next Level</button>
+                :
+                <button className='reset-btn' onClick={()=>navigate('/level1')}>Play Again</button>
+
+            }
         </div>
         
         

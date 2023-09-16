@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import PlayScreen from "./pages/PlayScreen/PlayScreen";
 import ResultPage from "./pages/ResultPage/ResultPage";
+import Level2 from "./pages/Level2/Level2";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +19,13 @@ const router = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    path:'/play',
+    path:'/level1',
     element:<PlayScreen/>
+  },
+  {
+    path:'/level2',
+    element:<Level2/>
+
   },
   {
     path:'/result',
