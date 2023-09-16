@@ -34,7 +34,7 @@ const ResultPage = () => {
         }
         
 
-    },[])
+    },[level,solution])
 
     
 
