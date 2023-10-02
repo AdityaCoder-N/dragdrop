@@ -22,7 +22,7 @@ const PlayScreen = ({
   level,
 }) => {
 
-  console.log("SORT ORDER IN PLAY SCREEN : " ,sortOrder);
+  // console.log("SORT ORDER IN PLAY SCREEN : " ,sortOrder);
   return (
     <div className="playscreen">
       <div className="playscreen-headings">

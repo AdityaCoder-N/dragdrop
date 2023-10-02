@@ -12,10 +12,10 @@ const ResultPage = () => {
 
     useEffect(() => {
         
-        console.log("level in result page : ",level)
+        // console.log("level in result page : ",level)
 
         let temp = [...solution];
-        if(level=="1")
+        if(level===1)
             temp.sort((a, b) => a - b);
         else
             temp.sort((a,b)=>b-a);
@@ -34,7 +34,7 @@ const ResultPage = () => {
         if(!flag){
             setResult(true);
         }
-        console.log(temp);
+        // console.log(temp);
 
     },[level,solution])
 
@@ -49,7 +49,7 @@ const ResultPage = () => {
             </div>
             
             {
-                level=="1"?
+                level===1?
                 <button className='reset-btn' onClick={()=>navigate('/level1')}>Reset</button>
                 :
                 <button className='reset-btn' onClick={()=>navigate('/level2')}>Reset</button>
@@ -62,7 +62,7 @@ const ResultPage = () => {
             </div>
 
             {
-                level=="1"?
+                level===1?
                 <button className='reset-btn' onClick={()=>navigate('/level2')}>Next Level</button>
                 :
                 <button className='reset-btn' onClick={()=>navigate('/level1')}>Play Again</button>
