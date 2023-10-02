@@ -34,15 +34,20 @@
     border-radius: 10px;
     border: 4px dotted grey;
 
-    padding: 2%;
+    padding: 4%;
     margin: 0.5%;
     transition: all 0.2s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drag-over{
     background-color: #FF006E;
     color: white;
     border-color: white;
+    padding: 4%;
 }
 
 .options-container{
@@ -50,6 +55,7 @@
     padding: 1%;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     cursor:grab;
     background-color: rgb(216, 216, 216);
@@ -91,4 +97,24 @@
     justify-content: center;
     margin-top: 2%;
     
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .playscreen-headings{
+        font-size: large;
+    }
+
+    .options-container{
+        width: 80%;
+    }
+    .solution-boxes{
+        
+        width: 18%;
+        font-size: small;
+        
+    }
+    .drag-over{
+        padding: 2%;
+    }
 }

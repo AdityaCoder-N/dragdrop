@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './DraggableOption.css'
-import '../../pages/PlayScreen/PlayScreen.css'
+import '../PlayScreen/PlayScreen.css'
 const DraggableOption = ({ item }) => {
 
     const [dragging,setDragging] = useState(false);

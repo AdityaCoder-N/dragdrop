@@ -11,9 +11,11 @@ const ResultPage = () => {
     const [result,setResult] = useState(false)
 
     useEffect(() => {
-      
+        
+        console.log("level in result page : ",level)
+
         let temp = [...solution];
-        if(level==="1")
+        if(level=="1")
             temp.sort((a, b) => a - b);
         else
             temp.sort((a,b)=>b-a);
@@ -32,7 +34,7 @@ const ResultPage = () => {
         if(!flag){
             setResult(true);
         }
-        
+        console.log(temp);
 
     },[level,solution])
 
@@ -45,15 +47,12 @@ const ResultPage = () => {
             <div className='heading'>
                 Oops ! You gave the wrong Answer <i className="fa-solid fa-xmark red"></i>
             </div>
-            <div className='subtxt'>     
-                Note : In an ascending array , The next element is greater to the elements before it.
-            </div>
             
             {
-                level==="1"?
+                level=="1"?
                 <button className='reset-btn' onClick={()=>navigate('/level1')}>Reset</button>
                 :
-                <button className='reset-btn' onClick={()=>navigate('/level12')}>Reset</button>
+                <button className='reset-btn' onClick={()=>navigate('/level2')}>Reset</button>
             }
         </div>:
 
@@ -63,7 +62,7 @@ const ResultPage = () => {
             </div>
 
             {
-                level==="1"?
+                level=="1"?
                 <button className='reset-btn' onClick={()=>navigate('/level2')}>Next Level</button>
                 :
                 <button className='reset-btn' onClick={()=>navigate('/level1')}>Play Again</button>
